@@ -1,0 +1,245 @@
+/* Center the carousel vertically and horizontally */
+body, html {
+    height: 100%; /* Ensure full height for proper centering */
+    margin: 0; /* Remove default margins */
+}
+.navbar-nav {
+    gap: 20px; /* Adjust the value as needed */
+}
+
+/* Set the height of the images to 75vh */
+.custom-carousel .carousel-inner img {
+    height: 75vh;
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+#home {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow beyond carousel area */
+}
+
+#homeCarousel .carousel-inner {
+    height: 100vh; /* Full viewport height for carousel */
+}
+
+#homeCarousel .carousel-item {
+    height: 100%; /* Ensure each item fills the container */
+}
+
+#homeCarousel .carousel-item img {
+    object-fit: cover;  /* Ensures the image covers the area without being cut off */
+    width: 100%;        /* Makes the image take full width */
+    height: 100%;       /* Ensures full height */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    #home {
+        height: 70vh;  /* Reduce height on smaller screens if needed */
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        height: 60vh;  /* Further reduce height for extra small devices */
+    }
+}
+
+#homeCarousel .carousel-caption {
+    bottom: 20%; /* Adjust vertical position of caption */
+    text-align: center;
+}
+
+#homeCarousel .carousel-caption h5 {
+    font-size: 2.5rem; /* Adjust font size for heading */
+    font-weight: bold; /* Bold heading for emphasis */
+}
+
+#homeCarousel .carousel-caption p {
+    font-size: 1.25rem; /* Adjust font size for paragraph */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+    padding: 0.5rem 1rem; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#homeCarousel .carousel-control-prev,
+#homeCarousel .carousel-control-next {
+    width: 5%; /* Adjust width of controls */
+    height: 100%; /* Full height */
+    top: 0;
+}
+
+#homeCarousel .carousel-control-prev-icon,
+#homeCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for control icons */
+    border-radius: 50%; /* Round control icons */
+}
+
+#homeCarousel .carousel-control-prev-icon::before,
+#homeCarousel .carousel-control-next-icon::before {
+    font-size: 2rem; /* Larger icon size */
+}
+#about .img-fluid {
+    max-height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures image covers the space without distortion */
+}
+
+#about ul {
+    padding-left: 0; /* Remove default list padding */
+}
+
+#about li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+#about i {
+    color: #f76c6c; /* Change icon color to match your theme */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+#carouselMommy .carousel-item img {
+    max-height: 500px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensures images fill the area while maintaining aspect ratio */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.carousel-caption {
+    bottom: 20%; /* Adjust vertical position of caption */
+    text-align: center; /* Center text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 1rem; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Adjust font size for heading */
+    font-weight: bold; /* Bold heading for emphasis */
+    color: #fff; /* Text color */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Adjust font size for paragraph */
+    color: #ddd; /* Text color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for control icons */
+    border-radius: 50%; /* Rounded control icons */
+}
+
+.custom-carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh; /* Full viewport height for centering */
+}
+
+/* Optional: Adjust carousel control button size if needed */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+    background-size: 20px 20px; /* Adjust size as needed */
+}
+
+#services .card {
+    border: none; /* Remove border for a cleaner look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+#services .card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+#services .bi {
+    color: #6c757d; /* Icon color, adjust as needed */
+}
+
+#testimonials .carousel-item {
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+#testimonials .rounded-circle {
+    border: 3px solid #f76c6c; /* Border color matching theme */
+}
+
+#testimonials .blockquote-footer {
+    font-size: 14px; /* Smaller footer text */
+    color: #6c757d; /* Subtle grey color */
+}
+
+#testimonials .blockquote {
+    font-style: italic; /* Italicized quote text */
+}
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: white;
+}
+
+#contactForm {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.form-control {
+    font-size: 1.2rem;
+    padding: 14px;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #f76c6c;
+}
+.text-white:hover {
+    color: #ddd !important; /* Change color on hover */
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.card-container {
+    margin: 0 auto;
+    max-width: 300px; /* Adjust size as needed */
+}
+
+.visiting-card {
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.btn-light {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-light:hover {
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+.social-media-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.social-media-icons a:hover {
+    color: #adb5bd;
+}
